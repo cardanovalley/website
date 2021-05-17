@@ -6,3 +6,4 @@ php/
 pages/
 modules/
 images/
+.DS_Store
