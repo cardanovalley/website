@@ -1,294 +1,290 @@
 /* This stylesheet is meant for custom styles, on top of the Ever+ Template */
-@import url('clash-display.css');
+@import url("clash-display.css");
 
 @font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter-Regular.ttf");
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
 }
 
 body {
-    font-family: Inter, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'ClashDisplay-Variable';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ClashDisplay-Variable";
 }
 
 .navbar-default {
-    font-family: 'ClashDisplay-Variable';
-    background-color: black;
+  font-family: "ClashDisplay-Variable";
+  background-color: black;
 }
 
 section.dark {
-    background-color: black;
+  background-color: black;
 }
 
 .slogan h4 {
-    color: #42286C;
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    margin: auto;
+  color: #42286c;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  margin: auto;
 }
 
 .first {
-    background-image: url(../assets/banner.jpg);
-    background-size: auto 100%;
-    background-position: top center;
-    height: 500px;
+  background-image: url(../assets/banner.jpg);
+  background-size: auto 100%;
+  background-position: top center;
+  height: 500px;
 }
 
 .first h2 {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    color: white;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: white;
 }
 
 .mb-70 {
-    padding-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .first p {
-    font-family: 'ClashDisplay-Variable';
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 600;
-    margin-bottom: 10px;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    color:#42286C;
+  font-family: "ClashDisplay-Variable";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #42286c;
 }
 
 @media screen and (max-width: 417px) {
-    .first p {
-        font-size: 20px;
-    }
+  .first p {
+    font-size: 20px;
+  }
 }
 .first a {
-    border-radius: 200px;
-    font-family: 'ClashDisplay-Variable';
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 0.025em;
-    background-color: #5b11d1;
-    width: 200px;
-    color: white;
+  border-radius: 200px;
+  font-family: "ClashDisplay-Variable";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.025em;
+  background-color: #5b11d1;
+  width: 200px;
+  color: white;
 }
 .first a:hover {
-    background-color: #6F16FF;
+  background-color: #6f16ff;
 }
 
 h3 {
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #42286C;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #42286c;
 }
 
 section.pricing .big-list {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-section.pricing .big-list h4{
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    color: black
+section.pricing .big-list h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: black;
 }
 
 section.pricing .big-list h4 span {
-    color: #FF4229;
+  color: #ff4229;
 }
 
-section.pricing .big-list .pull-right  {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-align: right;
-    color: #6F16FF;
+section.pricing .big-list .pull-right {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: right;
+  color: #6f16ff;
 }
 @media screen and (max-width: 992px) {
-    .sm-mb-4 {
-        margin-bottom: 3em;
-
-    }
+  .sm-mb-4 {
+    margin-bottom: 3em;
+  }
 }
 @media screen and (max-width: 360px) {
-
-    section.pricing .big-list h4,
-    section.pricing .big-list .pull-right  {
-        font-size: 16px;
-    }
-
+  section.pricing .big-list h4,
+  section.pricing .big-list .pull-right {
+    font-size: 16px;
+  }
 }
 section.presale {
-    background-color: #42286C;
+  background-color: #42286c;
 }
 
 section.presale .container {
-    max-width: 879px;
+  max-width: 879px;
 }
 
 section.presale .phase {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
 
-section.presale .phase .inner{
-    background-color: #382359;
-    border-radius: 50%;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    padding: 100% 0 0 0;
-    margin: auto;
+section.presale .phase .inner {
+  background-color: #382359;
+  border-radius: 50%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 100% 0 0 0;
+  margin: auto;
 }
 
 .process .phase:hover .inner {
-    background: #261E33;
-  }
+  background: #261e33;
+}
 section.presale .phase .inner .inner-info {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    border-radius: 50%;
-    padding: 28px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 50%;
+  padding: 28px;
 }
 
-
 .process .phase:after {
-    border-top: 1px dashed white;
+  border-top: 1px dashed white;
 }
 
 @media screen and (max-width: 992px) {
-    .process .phase:after {
-      border-left: 1px dashed white;
-      height: 3em;
-    }
+  .process .phase:after {
+    border-left: 1px dashed white;
+    height: 3em;
   }
+}
 
 section.presale .phase .inner .number {
-    font-family: 'ClashDisplay-Variable';
-    color: #FF6B58;
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-
+  font-family: "ClashDisplay-Variable";
+  color: #ff6b58;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.02em;
 }
 
 section.presale .phase .inner .label {
-    font-family: 'ClashDisplay-Variable';
-    color: white;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-
+  font-family: "ClashDisplay-Variable";
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.02em;
 }
-
 
 section.presale .phase .inner .description {
-    font-family: Inter;
-    color: white;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-
+  font-family: Inter;
+  color: white;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
 }
 @media screen and (max-width: 550px) {
-    .col-xxs-12 {
-        width: 100%;
-    }
-    .row.xxs-max-width {
-        max-width: 300px;
-        margin: 0 auto;
-    }
+  .col-xxs-12 {
+    width: 100%;
+  }
+  .row.xxs-max-width {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 section.remind {
-    background-color: #261E33;
+  background-color: #261e33;
 }
 
 section.remind h4 {
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    color: #9452FF;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9452ff;
 }
 
 section.remind a {
-    color: white;
-    border-bottom: 1px solid white;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 section.remind a:hover {
-    color: #9452FF;
-    border-bottom: 1px solid #9452FF;
-    cursor:pointer;
+  color: #9452ff;
+  border-bottom: 1px solid #9452ff;
+  cursor: pointer;
 }
 
 .gray {
-    background-color: #EEEAEF;
+  background-color: #eeeaef;
 }
 .info-section h3 {
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-    color: #42286C;
-
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #42286c;
 }
 
 .block-text {
-    min-height: 500px;
+  min-height: 500px;
 }
 
 .rarity img {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .navbar-default.affix {
-    padding: 10px;
+  padding: 10px;
 }
 .navbar-default .navbar-nav li a {
-    color: white;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 19px;
-    letter-spacing: 0em;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
 }
 
 .navbar-default .navbar-nav li a:hover {
-    color: #9452FF;
+  color: #9452ff;
 }
 
 .navbar-default .navbar-brand {
-    height: auto;
-    padding: 0;
+  height: auto;
+  padding: 0;
 }
 
 .navbar-default .navbar-brand img {
-    height: 41px;
+  height: 41px;
 }
 /* 
 .navbar-default .navbar-toggle {
@@ -296,103 +292,95 @@ section.remind a:hover {
 } */
 
 #cardgotchi .description {
-    color: black;
-    padding: 50px 15%;
+  color: black;
+  padding: 50px 15%;
 }
 
 #cardgotchi .inner-text {
-    max-width: 400px;
-    text-align: left;
-    display: inline-block;
+  max-width: 400px;
+  text-align: left;
+  display: inline-block;
 }
 
 .loader {
-    background: #6F16FF;
+  background: #6f16ff;
 }
-@media screen and (min-width: 768px){
-
-    .table-cell{
-        float: none;
-        display: table-cell;
-        vertical-align: middle;
-    }
-
+@media screen and (min-width: 768px) {
+  .table-cell {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
-@media screen and (max-width: 767px){
-
-    #cardgotchi .inner-text {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
+@media screen and (max-width: 767px) {
+  #cardgotchi .inner-text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
-
 
 #cardgotchi .description a {
-    color: black;
-    border-bottom: 1px solid black;
+  color: black;
+  border-bottom: 1px solid black;
 }
 
 #cardgotchi .description a:hover {
-    color: #6F16FF;
-    border-bottom: 1px solid #6F16FF;
+  color: #6f16ff;
+  border-bottom: 1px solid #6f16ff;
 }
-
 
 .cadena-wrapper {
-    padding: 108px 0 !important;
+  padding: 108px 0 !important;
 }
 
-.slogan h4{
-    margin: auto;
+.slogan h4 {
+  margin: auto;
 }
 
 .cadena {
-    background-image: url(../assets/cadena.png);
-    width: 100%;
-    height: 25em;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../assets/cadena.png);
+  width: 100%;
+  height: 25em;
+  background-position: center;
+  background-size: cover;
 }
 
-#presale .col-md-4{
-    border: solid 1px white;
+#presale .col-md-4 {
+  border: solid 1px white;
 }
 .pos-a {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .vbottom {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 section.presale .phase .inner .description a,
 section.footer a {
-    color: white;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 section.footer .mb-15 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 section.presale .phase .inner .description a:hover,
 section.footer a:hover {
-    color: #9452FF;
-    text-decoration: none;
+  color: #9452ff;
+  text-decoration: none;
 }
 
 section.footer .sep {
-    color: white;
-    margin-left: 5px;
-    margin-right: 5px;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-@media screen and (max-width: 768px){
-
-    section.footer .links {
-        text-align: center;
-    }
-
+@media screen and (max-width: 768px) {
+  section.footer .links {
+    text-align: center;
+  }
 }
