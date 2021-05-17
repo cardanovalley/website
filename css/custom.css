@@ -35,8 +35,9 @@ section.dark {
 
 .first {
     background-image: url(../assets/banner.jpg);
-    background-size: contain;
-    padding: 34.75% 0 0;
+    background-size: auto 100%;
+    background-position: top center;
+    height: 500px;
 }
 
 .first h2 {
@@ -57,11 +58,17 @@ section.dark {
     font-size: 23px;
     font-style: normal;
     font-weight: 600;
+    margin-bottom: 10px;
     line-height: 30px;
     letter-spacing: 0.02em;
     color:#42286C;
 }
 
+@media screen and (max-width: 417px) {
+    .first p {
+        font-size: 20px;
+    }
+}
 .first a {
     border-radius: 200px;
     font-family: 'ClashDisplay-Variable';
@@ -109,13 +116,25 @@ section.pricing .big-list .pull-right  {
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.05em;
+    text-align: right;
     color: #6F16FF;
+}
+@media screen and (max-width: 992px) {
+    .sm-mb-4 {
+        margin-bottom: 3em;
+
+    }
+}
+@media screen and (max-width: 360px) {
+
+    section.pricing .big-list h4,
+    section.pricing .big-list .pull-right  {
+        font-size: 16px;
+    }
 
 }
-
 section.presale {
     background-color: #42286C;
-
 }
 
 section.presale .container {
@@ -278,6 +297,24 @@ section.remind a:hover {
 
 #cardgotchi .description {
     color: black;
+    padding: 50px 15%;
+}
+
+#cardgotchi .inner-text {
+    max-width: 400px;
+    text-align: left;
+    display: inline-block;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .table-cell{
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
 }
 
 #cardgotchi .description a {
@@ -315,14 +352,18 @@ section.remind a:hover {
     width: 100%;
 }
 
-.mb-2 {
-    margin-bottom: 2em
+.vbottom {
+    padding-bottom: 30px;
 }
 
 section.footer a {
     color: white;
     -webkit-transition: all .3s;
     transition: all .3s;
+}
+
+section.footer .mb-15 {
+    margin-bottom: 15px;
 }
 
 section.footer a:hover {
@@ -334,4 +375,11 @@ section.footer .sep {
     color: white;
     margin-left: 5px;
     margin-right: 5px;
+}
+@media screen and (max-width: 768px){
+
+    section.footer .links {
+        text-align: center;
+    }
+
 }
