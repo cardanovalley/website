@@ -367,6 +367,7 @@ section.remind a:hover {
     padding-bottom: 30px;
 }
 
+section.presale .phase .inner .description a,
 section.footer a {
     color: white;
     -webkit-transition: all .3s;
@@ -377,6 +378,7 @@ section.footer .mb-15 {
     margin-bottom: 15px;
 }
 
+section.presale .phase .inner .description a:hover,
 section.footer a:hover {
     color: #9452FF;
     text-decoration: none;
