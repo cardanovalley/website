@@ -11,5 +11,5 @@ Made over [Ever+ HTML tempplate](https://themeforest.net/item/ever-responsive-mu
 
 ## Contact
 
-Any question please DM us on [twitter](https://twitter.com/CardanoValley)  or e-mail us to [cardano.valley@gmail.com](mailto:cardano.valley@gmail.com)
+Any question please DM us on [twitter](https://twitter.com/CardanoValley)  or e-mail us to [cardanovalley@gmail.com](mailto:cardanovalley@gmail.com)
 
