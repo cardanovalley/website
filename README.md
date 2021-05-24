@@ -3,7 +3,7 @@ CARDANO VALLEY WEBSITE
 
 [![Cardano Valley Preview](https://raw.githubusercontent.com/cardanovalley/website/master/assets/banner.jpg)](https://cardanovalley.com/)
 
-This is the website of Cardano Valley CARDAGOTCHI PRE-SALE 05/21. Online at [cardanovalley.com](https://cardanovalley.com/)
+This is the website of Cardano Valley Cardagotchi Pre-Sale 05/21. Online at [cardanovalley.com](https://cardanovalley.com/)
 
 Cardagotchi is a unique collection of 10,000 NFTs inscripted in the Cardano blockchain. Through Cardagotchi universe you’ll be able to see all sorts of lovely characters, from executive cats living in fantasy landscapes to ex-convict bulls with punk hair enjoying a walk on the beach.
 
@@ -11,5 +11,5 @@ Made over [Ever+ HTML tempplate](https://themeforest.net/item/ever-responsive-mu
 
 ## Contact
 
-Any question please DM us on [twitter](https://twitter.com/CardanoValley)  or e-mail us to [ardano.valley@gmail.com](mailto:cardano.valley@gmail.com)
+Any question please DM us on [twitter](https://twitter.com/CardanoValley)  or e-mail us to [cardano.valley@gmail.com](mailto:cardano.valley@gmail.com)
 
