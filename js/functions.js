@@ -61,14 +61,26 @@ $(function(){
     e.preventDefault();
     e.stopPropagation();
     var href = $(this).attr('href');
+    gtag('event', this.id);
     $('html,body').animate({
       scrollTop : $(href).offset().top-50+'px'
     });
   });
 
+  // adding google analytics event to buttons
+  $('.btn').on('click', function(e){
+    gtag('event', this.id);
+  });
+
+  // adding google analytics event to anchors (links)
+  $('a').on('click', function(e){
+    gtag('event', this.id);
+  });
+
   // For the modern navigation, we use a script to trigger the menu
   $('.menu-trigger').on('click', function(){
     $('.navbar-modern').fadeIn();
+    gtag('event', this.id);
   });
 
   // To close the modern menu
