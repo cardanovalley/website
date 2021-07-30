@@ -186,8 +186,7 @@ $(function(){
     );
   };
 
-  // const domain = 'https://presale.cardanovalley.com';
-  const domain = 'http://localhost:8000';
+  const domain = 'https://presale.cardanovalley.com';
 
   // Purchase now behaviour
   $('#buy_now').on('click', function(e){
