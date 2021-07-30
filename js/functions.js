@@ -166,6 +166,53 @@ $(function(){
 
   window.requestAnimationFrame(inView); // Performance boost
 
+  const show_address = function(response) {
+    $('#buy-now-info').html(
+        '<h2>\n' +
+        'Current Address:\n' +
+        '</h2>\n' +
+        '<h3 class="address">\n' +
+        response.address +
+        '</h3>\n' +
+        '<h2>\n' +
+        'Price:\n' +
+        '</h2>\n' +
+        '<h3>\n' +
+        response.price +' ₳\n' +
+        '</h3>\n' +
+        '<h5>\n' +
+        'Remember to reload if you want to buy another one because addresses may change.\n' +
+        '</h5>\n'
+    );
+  };
+
+  // const domain = 'https://presale.cardanovalley.com';
+  const domain = 'http://localhost:8000';
+
+  // Purchase now behaviour
+  $('#buy_now').on('click', function(e){
+    const checking_message_present = $("#buy-now-info:contains(Checking)").length != 0;
+    if (checking_message_present) {
+      $(this).button('loading');
+      $('#buy-now-info').html('<span id="refresh-message">Checking available wallets... </span><i class="fa fa-refresh fa-spin"></i>');
+
+      $.get(domain + '/current_milestone',
+      ).success(show_address)
+      .error(function(e) {
+        console.error(e);
+      })
+      .always(function() {
+        $('#buy_now').button('reset')
+      });
+    } else {
+        $('#buy-now-info').html('<span id="refresh-message">Checking available wallets... </span><i class="fa fa-refresh fa-spin"></i>');
+    }
+
+  });
+
+  // start backend server
+  $.get(domain + '/current_milestone')
+
 });
 
 $window.on('load', function(){
