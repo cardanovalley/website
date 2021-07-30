@@ -1,21 +1,14 @@
 /* This stylesheet is meant for custom styles, on top of the Ever+ Template */
 @import url("clash-display.css");
-
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.ttf");
 }
-
 body {
   font-family: Inter, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "ClashDisplay-Variable";
 }
 
@@ -24,6 +17,14 @@ h6 {
   background-color: black;
 }
 
+@media screen and (max-width: 992px) {
+  #aboutus,
+#rarity,
+#slogan,
+.section {
+    padding: 100px 0;
+  }
+}
 section.dark {
   background-color: black;
 }
@@ -44,7 +45,6 @@ section.dark {
   background-position: top center;
   height: 500px;
 }
-
 .first h2 {
   font-size: 30px;
   font-style: normal;
@@ -68,13 +68,7 @@ section.dark {
   letter-spacing: 0.02em;
   color: #42286c;
 }
-
-@media screen and (max-width: 417px) {
-  .first p {
-    font-size: 20px;
-  }
-}
-.first a {
+.first button {
   border-radius: 200px;
   font-family: "ClashDisplay-Variable";
   font-size: 17px;
@@ -86,10 +80,15 @@ section.dark {
   width: 200px;
   color: white;
 }
-.first a:hover {
+.first button:hover {
   background-color: #6f16ff;
 }
 
+@media screen and (max-width: 417px) {
+  .first p {
+    font-size: 20px;
+  }
+}
 h3 {
   font-size: 29px;
   font-style: normal;
@@ -111,11 +110,9 @@ section.pricing .big-list h4 {
   letter-spacing: 0.05em;
   color: black;
 }
-
 section.pricing .big-list h4 span {
   color: #ff4229;
 }
-
 section.pricing .big-list .pull-right {
   font-size: 18px;
   font-style: normal;
@@ -124,29 +121,15 @@ section.pricing .big-list .pull-right {
   text-align: right;
   color: #6f16ff;
 }
-@media screen and (max-width: 992px) {
-  .sm-mb-4 {
-    margin-bottom: 3em;
-  }
-}
-@media screen and (max-width: 360px) {
-  section.pricing .big-list h4,
-  section.pricing .big-list .pull-right {
-    font-size: 16px;
-  }
-}
 section.presale {
   background-color: #42286c;
 }
-
 section.presale .container {
   max-width: 879px;
 }
-
 section.presale .phase {
   margin-bottom: 3em;
 }
-
 section.presale .phase .inner {
   background-color: #382359;
   border-radius: 50%;
@@ -157,9 +140,20 @@ section.presale .phase .inner {
   margin: auto;
 }
 
+@media screen and (max-width: 992px) {
+  .sm-mb-4 {
+    margin-bottom: 3em;
+  }
+}
+@media screen and (max-width: 360px) {
+  section.pricing .big-list h4, section.pricing .big-list .pull-right {
+    font-size: 16px;
+  }
+}
 .process .phase:hover .inner {
   background: #261e33;
 }
+
 section.presale .phase .inner .inner-info {
   position: absolute;
   top: 0;
@@ -178,7 +172,6 @@ section.presale .phase .inner .inner-info {
     height: 3em;
   }
 }
-
 section.presale .phase .inner .number {
   font-family: "ClashDisplay-Variable";
   color: #ff6b58;
@@ -188,7 +181,6 @@ section.presale .phase .inner .number {
   line-height: 26px;
   letter-spacing: 0.02em;
 }
-
 section.presale .phase .inner .label {
   font-family: "ClashDisplay-Variable";
   color: white;
@@ -198,7 +190,6 @@ section.presale .phase .inner .label {
   line-height: 14px;
   letter-spacing: 0.02em;
 }
-
 section.presale .phase .inner .description {
   font-family: Inter;
   color: white;
@@ -208,20 +199,9 @@ section.presale .phase .inner .description {
   line-height: 17px;
   letter-spacing: 0em;
 }
-@media screen and (max-width: 550px) {
-  .col-xxs-12 {
-    width: 100%;
-  }
-  .row.xxs-max-width {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-}
-
 section.remind {
   background-color: #261e33;
 }
-
 section.remind h4 {
   font-size: 27px;
   font-style: normal;
@@ -230,21 +210,37 @@ section.remind h4 {
   letter-spacing: 0.02em;
   color: #9452ff;
 }
-
 section.remind a {
   color: white;
   border-bottom: 1px solid white;
 }
-
 section.remind a:hover {
   color: #9452ff;
   border-bottom: 1px solid #9452ff;
   cursor: pointer;
 }
 
+@media screen and (max-width: 550px) {
+  .col-xxs-12 {
+    width: 100%;
+  }
+
+  .row.xxs-max-width {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
 .gray {
   background-color: #eeeaef;
 }
+
+#collapseBuy {
+  margin-top: 15px;
+}
+#collapseBuy h2 {
+  color: #333333;
+}
+
 .info-section h3 {
   font-size: 29px;
   font-style: normal;
@@ -273,29 +269,24 @@ section.remind a:hover {
   line-height: 19px;
   letter-spacing: 0em;
 }
-
 .navbar-default .navbar-nav li a:hover {
   color: #9452ff;
 }
-
 .navbar-default .navbar-brand {
   height: auto;
   padding: 0;
 }
-
 .navbar-default .navbar-brand img {
   height: 41px;
 }
-/* 
-.navbar-default .navbar-toggle {
-    padding: 20px 0;
-} */
 
+/* *.navbar-default .navbar-toggle {
+ * *    padding: 20px 0;
+ * *} */
 #cardgotchi .description {
   color: black;
   padding: 50px 15%;
 }
-
 #cardgotchi .inner-text {
   max-width: 400px;
   text-align: left;
@@ -305,6 +296,7 @@ section.remind a:hover {
 .loader {
   background: #6f16ff;
 }
+
 @media screen and (min-width: 768px) {
   .table-cell {
     float: none;
@@ -318,12 +310,10 @@ section.remind a:hover {
     margin-bottom: 40px;
   }
 }
-
 #cardgotchi .description a {
   color: black;
   border-bottom: 1px solid black;
 }
-
 #cardgotchi .description a:hover {
   color: #6f16ff;
   border-bottom: 1px solid #6f16ff;
@@ -338,16 +328,17 @@ section.remind a:hover {
 }
 
 .cadena {
-  background-image: url(../assets/cadena.png);
+  background-image: url(../assets/cadena.jpg);
   width: 100%;
   height: 25em;
   background-position: center;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 #presale .col-md-4 {
   border: solid 1px white;
 }
+
 .pos-a {
   position: absolute;
   width: 100%;
@@ -357,30 +348,37 @@ section.remind a:hover {
   padding-bottom: 30px;
 }
 
-section.presale .phase .inner .description a,
+section.presale .phase .inner .description a {
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 section.footer a {
   color: white;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 section.footer .mb-15 {
   margin-bottom: 15px;
 }
-
-section.presale .phase .inner .description a:hover,
+section.presale .phase .inner .description a:hover {
+  color: #9452ff;
+  text-decoration: none;
+}
 section.footer a:hover {
   color: #9452ff;
   text-decoration: none;
 }
-
 section.footer .sep {
   color: white;
   margin-left: 5px;
   margin-right: 5px;
 }
+
 @media screen and (max-width: 768px) {
   section.footer .links {
     text-align: center;
   }
 }
+
+/*# sourceMappingURL=custom.css.map */
