@@ -5,7 +5,7 @@ CARDANO VALLEY WEBSITE
 
 This is the website of Cardano Valley Cardagotchi Pre-Sale 05/21. Online at [cardanovalley.com](https://cardanovalley.com/)
 
-Cardagotchi is a unique collection of 10,000 NFTs inscripted in the Cardano blockchain. Through Cardagotchi universe you’ll be able to see all sorts of lovely characters, from executive cats living in fantasy landscapes to ex-convict bulls with punk hair enjoying a walk on the beach.
+Cardagotchi is a unique collection of 2,280 NFTs inscripted in the Cardano blockchain. Through Cardagotchi universe you’ll be able to see all sorts of lovely characters, from executive cats living in fantasy landscapes to ex-convict bulls with punk hair enjoying a walk on the beach.
 
 Made over [Ever+ HTML tempplate](https://themeforest.net/item/ever-responsive-multipurpose-html-template/14579653).
 
