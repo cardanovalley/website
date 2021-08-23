@@ -69,6 +69,12 @@ $(function(){
 
   // adding google analytics event to buttons
   $('.btn').on('click', function(e){
+    if (this.id === 'buy_now') {
+      gtag('event', 'conversion', {
+          'send_to': 'AW-983734430/j04KCNqgze0CEJ6xitUD',
+          'transaction_id': '',
+      });
+    }
     gtag('event', this.id);
   });
 
