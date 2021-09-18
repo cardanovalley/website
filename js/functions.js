@@ -182,7 +182,10 @@ $(function(){
         '</h3>\n' +
         '<h5>\n' +
         'Remember to reload if you want to buy another one because addresses may change.\n' +
-        '</h5>\n'
+        '</h5>\n'+
+        '<h2>\n' +
+        'We deliver every Wednesday at 8 PM EST.\n' +
+        '</h2>\n'
     );
   };
 
