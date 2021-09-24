@@ -190,7 +190,7 @@ $(function(){
         'Remember to reload if you want to buy another one because addresses may change.\n' +
         '</h5>\n'+
         '<h5>\n' +
-        'We deliver every Wednesday at 8 PM EST.\n' +
+        'Be sure to use Yoroi or Daedalus.\n' +
         '</h5>\n'
     );
   };
