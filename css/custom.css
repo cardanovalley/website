@@ -375,6 +375,10 @@ section.footer .sep {
   margin-right: 5px;
 }
 
+#timer {
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   section.footer .links {
     text-align: center;
