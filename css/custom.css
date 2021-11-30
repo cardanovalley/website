@@ -160,6 +160,7 @@ section.presale .phase .inner .inner-info {
   height: 100%;
   border-radius: 50%;
   padding: 28px;
+  width: 100%;
 }
 
 .process .phase:after {
@@ -339,6 +340,10 @@ section.remind a:hover {
   border: solid 1px white;
 }
 
+#timer {
+  color: white;
+}
+
 .pos-a {
   position: absolute;
   width: 100%;
@@ -373,10 +378,6 @@ section.footer .sep {
   color: white;
   margin-left: 5px;
   margin-right: 5px;
-}
-
-#timer {
-  color: white;
 }
 
 @media screen and (max-width: 768px) {
