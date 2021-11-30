@@ -8,3 +8,4 @@ modules/
 images/
 .DS_Store
 .idea
+*.map
