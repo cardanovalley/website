@@ -33,11 +33,13 @@ $(function(){
 
   // Use smooth transitions between pages on certain links
   $('#mainnav a, .grid a, .list a, a.btn, .content a').on('click', function(e){
-    e.preventDefault();
     var target = $(this).attr('target');
-    if(!$(this).hasClass('dropdown-toggle') && !$(this).hasClass('lightbox') && !$(this).hasClass('anchor') && $(this).attr('role') != 'tab' && $(this).attr('href') != '#'){
-      e.stopPropagation();
-      loadPage($(this),target);
+    if (target.startsWith('#')) {
+        e.preventDefault();
+      if(!$(this).hasClass('dropdown-toggle') && !$(this).hasClass('lightbox') && !$(this).hasClass('anchor') && $(this).attr('role') != 'tab' && $(this).attr('href') != '#'){
+        e.stopPropagation();
+        loadPage($(this),target);
+      }
     }
   });
 
