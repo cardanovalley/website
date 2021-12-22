@@ -7,7 +7,7 @@ class Cryptochichis extends React.Component {
     super(props);
     this.state = { loaded: false, nfts: [] };
 
-    fetch('https://mocki.io/v1/0a3f4fb6-b0e5-47d4-8ceb-c3df759fc029').then(
+    fetch('https://presale.cardanovalley.com/external-urls').then(
         res => { return res.json(); }
         ).then(
             res => {
@@ -21,11 +21,15 @@ class Cryptochichis extends React.Component {
       return '<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>';
     }
 
-    const listItems = this.state.nfts.map((nft) =>  <a key={nft.name} href={nft.external_store_link} className="item">
-                <div style={{backgroundImage: "url(" + nft.ipfs_link + ")"}} className="bg"></div>
+    const listItems = this.state.nfts.map((nft) =>  <div key={nft.name} className="col-md-4">
+                <a href={nft.external_store_link} className="art-item">
+                <img src={'assets/cryptochichis/' + nft.name + '.jpg'} ></img>
                 <div className="caption"><h4 className="title">{nft.name}</h4>
+                    <button className="btn btn-danger">BUY</button>
+                    <button className="btn btn-default fa-pull-right">24 ADA</button>
                 </div>
-              </a>);
+                </a>
+              </div>);
 
     return listItems;
   }
