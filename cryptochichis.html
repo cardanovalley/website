@@ -47,6 +47,11 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Wrapper-->
+     <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <div id="wrapper" class="container-fluid">
       <!-- Navigation block -->
       <nav id="mainnav" data-spy="affix" data-offset-top="40" class="navbar navbar-default navbar-fixed-top">
@@ -117,35 +122,16 @@
       </section>
 
       <!-- Chichis List section -->
-      <section class="section gray" id="chichis-list">
+
+    <section class="section">
         <div class="container">
-          <div class="row text-center">
-            <h3 class="text-uppercase mb-70">Buy your Chichi</h3>
-          </div>
-        
-          <div class="grid">
-                <div class="grid-sizer"></div><!-- Portfolio items - default-->
-              <a href="cardagotchi.html" class="item old">
-                <div style="background-image: url(assets/home-project-cardagotchi.jpg);" class="bg"></div>
-                <div class="caption"><h4 class="title">Cardagotchi</h4>
-                    <div class="description">Your new collectionable cirtual pet in the Cardano Blockchain</div>
-                </div>
-              </a>
-              <a href="cryptochichis.html" class="item new">
-                <div style="background-image: url(assets/home-project-cryptochichi.jpg);" class="bg"></div>
-                <div class="caption"><h4 class="title">Cryptochichis</h4>
-                    <div class="description">Join the #vulvageddon. First vulvas CNFTs.</div>
-                </div>
-              </a>
-              <a href="#" class="item">
-                <div style="background-image: url(assets/home-project-facetales.jpg);" class="bg"></div>
-                <div class="caption"><h4 class="title">Facetales</h4>
-                    <div class="description">Amazing project from a Disney artist is coming to CV</div>
-                </div>
-              </a>
+            <section class="head">
+              <h3 class="text-uppercase mb-70">Buy your Chichi</h3>
+            </section>
+            <div id="cryptochichis" class="grid">
             </div>
         </div>
-      </section>
+    </section>
 
       
       <!-- Price -->
@@ -188,6 +174,7 @@
       <script src="js/assets/imagesloaded.pkgd.min.js"></script>
       <script src="js/assets/validation.js"></script>
       <script src="js/assets/isotope.pkgd.min.js"></script>
+      <script src="js/cryptochichis.js" type="text/babel"></script>
       <script src="js/functions.js"></script>
     </div>
     <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
