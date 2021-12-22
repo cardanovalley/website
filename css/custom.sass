@@ -40,6 +40,16 @@ section.dark
 .cryptochichi
   background-image: url(../assets/Banner-Home-Cryptochichis.jpg)
 
+.cryptochichi.first h3
+  margin-top: 5px
+  margin-bottom: 5px
+
+.purple
+  color: #6F16FF
+
+.bold
+  font-weight: 600
+
 .first
   background-size: auto 100%
   background-position: top center
@@ -55,7 +65,7 @@ section.dark
     letter-spacing: 0.02em
     color: #42286c
 
-  button
+  button, a.btn
     border-radius: 200px
     font-family: "ClashDisplay-Variable"
     font-size: 17px
@@ -81,6 +91,86 @@ section.dark
 .mb-70
   padding-bottom: 70px
 
+.art-item
+
+  .caption
+    background-color: #6f16ff
+    padding: 20px
+    margin-bottom: 20px
+
+  h4
+    background-color: #6f16ff
+    color: white
+    margin-top: 0
+    padding-top: 10px
+    font-weight: 600
+
+  img
+    max-width: 100%
+    height: auto
+
+  button
+    font-weight: 700
+
+  button.btn-danger
+    background-color: #382359
+    border: 4px solid #FF4229
+    border-radius: 50px
+
+  button.btn-default
+    background-color: white
+    border: 4px solid white
+    border-radius: 50px
+    color: #6f16ff !important
+
+
+.roadmap
+  background-color: #42286c
+  color: white
+
+  h3
+    color: white
+    width: 100%
+    text-transform: uppercase
+
+
+  section h2
+    background-color: #6F16FF
+    width: 100%
+    border-radius: 50px
+    text-align: center
+    margin-bottom: 20px
+
+  .plan.highlighted
+    border-color: #FFA858
+
+    h4 i
+      color: #FFA858
+
+  .plan.upcoming
+    border-color: #9D61FF
+
+    h4 i
+      background-color: #9D61FF
+      color: #42286c
+      border-radius: 50px
+      height: 20px
+      width: 20px
+
+  .plan
+    border-radius: 50px
+    border-width: 2px
+    border-color: #61BDFF
+
+    h4
+      font-weight: 600
+      font-size: 1.4em
+
+    h4 i
+      color: #61BDFF
+
+    ul li strong
+      color: white
 
 @media screen and (max-width: 417px)
   .first p
@@ -94,6 +184,7 @@ h3
   letter-spacing: 0.02em
   text-align: center
   color: #42286c
+  text-transform: uppercase
 
 section
   &.pricing .big-list
@@ -223,6 +314,15 @@ section
 
 .gray
   background-color: #eeeaef
+
+.dark-purple
+  background-color: #261E33
+  border-top: 1px solid #261E33
+
+  color: white
+  .title-block h3
+    color: white
+
 
 .dark-gray
   background-color: #DAD6DB
